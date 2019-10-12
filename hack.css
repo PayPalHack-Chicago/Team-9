@@ -1,0 +1,83 @@
+#homeheader {
+        text-align: center;
+        color: #000000;
+        font-family: Georgia; 
+    }
+body {font-family: Georgia, Serif;}
+h2, h4, h5, h6, p {
+  font-family: "Playfair Display";
+  letter-spacing: 1px;
+    font-size: 18px;
+
+}
+h1{
+ font-family: "Playfair Display";
+ letter-spacing: 1px;
+ padding-top: 10px;
+font-size: 60px;
+    
+}
+h3{
+      font-family: "Playfair Display";
+  letter-spacing: 6px;
+}
+#terms {
+    text-align: center;
+}
+#whyit{
+    font-family: "Playfair Display";
+font-size: 25px;
+    color: #8b0000;
+    text-align: center;
+}
+#why{
+    font-family: "Playfair Display";
+ letter-spacing: 1px;
+    color: #e60000;
+}
+
+#txtEmail{
+    width: 80%;
+}
+#subemail{
+        color: #8b0000;
+        background-color: beige;
+        width: 15%;
+        height: 20%;
+        font-size: 17px;
+
+}
+#calcost{
+        color: #8b0000;
+        background-color: beige;
+        width: 15%;
+        height: 20%;
+        font-size: 23px;
+}
+
+#sendemails{
+        color: #8b0000;
+        background-color: beige;
+        width: 15%;
+        height: 20%;
+        font-size: 23px;
+}
+
+
+
+
+/*micro-clearfix by Nicolas Gallagher http://nicolasgallagher.com/micro-clearfix-hack/*/
+/*For modern browsers. */
+
+.cf:before,
+.cf:after {
+    content:"";
+    display:table;
+}
+.cf:after {
+    clear:both;
+}
+/*For IE 6/7 (trigger has layout) */
+.cf {
+    zoom:1;
+}

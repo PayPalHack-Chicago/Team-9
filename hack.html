@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"> 
+    <title>Split It</title>
+     <link rel="shortcut icon" href="logo.jpg" type="image/png">
+ <script type="text/javascript">
+        var emails = [];
+        var mainUser = "Jessica";
+        function addEmails(){
+            var inputString = document.getElementById("txtEmail").value;
+            var splitInputArray = inputString.split(", ");
+            for(var email in splitInputArray){
+                emails.push(email);
+            }
+        }
+    </script>    
+<link rel="stylesheet" type="text/css" href="hack.css">  
+
+</head>
+    
+<body> 
+     <form action="http://localhost:8080/" method="post">
+    <div id="homeheader">
+        <br>
+        <img src="title.jpg" height="275" width="350">
+        <h3>"Smartly manage debts between friends"</h3>     
+    </div>
+    <div id="body">
+        <hr>
+        <p>
+            Enter PayPalMe link <br> <input type="text" id="txtPayPal" name="paypal"> <br>
+	       Enter emails split by a , example: (example@yahoo.com, example1@gmail.com) <br>
+           <input type="text" id="txtEmail" name="email" > <br>
+           <input id="subemail" type="button" value="Submit Emails" onclick="addEmails()"> 
+            <br>
+            <br>
+        Enter total cost.<br>
+	       $<input type="text" id="txtCost" name="cost" ><br>
+        </p>
+        <p>
+	       How do you want to split it? <br>
+	       <input type="radio" name="radEven" id="even"> Evenly <br>
+	        <input type="radio" name="radCustom" id="custom"> Custom (Coming soon)  <br>
+        </p>
+        <button id="calcost" name="button" value="Cost" >Calculate</button>
+        <button id="sendemails" name="button" value="Emails">Send Emails</button>
+        
+	<hr>
+    <div id="why">
+            <h2 id="whyit">
+                Why Split It
+            </h2>
+            <p> 
+Calculating the right amounts of money and the transactions (who pays to whom how much) to clear a group's shared costs and to settle debts for payback can be tedious task - often only solved with the help of spreadsheets. It even becomes more complicated when one or more community spendings are not shared by the whole group (e.g. one friend did not want to join the group for the museum trip paid by another friend for everyone).
+            </p> <p>
+We therefore established SplitIt.com to provide people with an easy, free, fast and realiable way to split up their group expenses after holidays, partys, shared presents, festivals, vactions, trips, weddings, roadtrips or in clubs and shared apartments and so much more.
+</p> <p>
+Everything happens in the browser without the need for signup or the installation of an App on mobile phones. It is our mission to save groups in which everyone paid some bills from arguments and wasting time after the fun is over.
+            </p>
+        
+        </div>
+    </div>
+        
+    <div id="footer">
+        <hr>
+        <p>
+            <img src="logo.jpg" height="25" width="25">
+            &copySplitIt.com <br>
+        </p>
+        <p id="terms">
+        <a href="terms.html">Terms and Conditions</a> 
+        </p>
+    </div>
+    </form>
+</body>    
+</html>
