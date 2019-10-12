@@ -52,7 +52,7 @@ http.createServer( function(req, res) {
 
 function email (reciever, subjectText, message){
     const sgMail = require('@sendgrid/mail');
-    var SENDGRID_API_KEY = API_KEY_HERE;
+    var SENDGRID_API_KEY = PUT_API_KEY_HERE;
     sgMail.setApiKey(SENDGRID_API_KEY);
     var ourEmail = 'split-it@splitit.com';
     const msg = {
